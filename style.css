@@ -1,0 +1,9 @@
+body {
+    background: #2e3c4e;
+}
+
+.block {
+    background: #665454;
+    transition: 75ms;
+    border-radius: 20px;
+}
