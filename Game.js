@@ -1,41 +1,55 @@
 var block = document.getElementById('block')
+block.style.height = 50 + 'px';
+block.style.width = 50 + 'px';
 
-block.style.marginTop = '275px';
-block.style.marginLeft = '500px';
+block.addEventListener("mouseover", function (event) {
+    // let x = event.clientX;
+    // let y = event.clientY;
 
-document.addEventListener('keydown', (event) => {
-    var name = event.key;
-    var code = event.code;
+    block.style.height = 100 + 'px';
+    block.style.width = 100 + 'px';
 
-    var posT = block.style.marginTop.slice(0, -2)
-    var posL = block.style.marginLeft.slice(0, -2)
+    // block.style.marginLeft = x - 50 + 'px';
+    // block.style.marginTop = y - 50 + 'px';
+});
 
-    console.log(posT, posL);
+block.addEventListener("mouseleave", function () {
+    block.style.height = 50 + 'px';
+    block.style.width = 50 + 'px';
+});
 
-    pT = parseFloat(posT)
-    pL = parseFloat(posL)
+document.addEventListener("click", function (event) {
 
-    console.log(pT, pL);
+    let x = event.clientX;
+    let y = event.clientY;
+    console.log(x, y);
 
-    switch (name) {
+    block.style.marginLeft = x - 25 + 'px';
+    block.style.marginTop = y - 25 + 'px';
+});
+
+document.addEventListener("keydown", (event) => {
+
+    var n = event.key
+
+    console.log(n);
+    var x = block.style.marginLeft
+    var y = block.style.marginTop
+    console.log(x, y);
+
+
+    switch (n) {
         case 'ArrowUp':
-            block.style.marginTop = pT - 5 + 'px';
+            block.style.marginTop = parseFloat(y) - 5 + 'px';
             break;
         case 'ArrowDown':
-            block.style.marginTop = pT + 5 + 'px';
-            break;
-        case 'ArrowLeft':
-            block.style.marginLeft = pL - 5 + 'px';
+            block.style.marginTop = parseFloat(y) + 5 + 'px';
             break;
         case 'ArrowRight':
-            block.style.marginLeft = pL + 5 + 'px';
+            block.style.marginLeft = parseFloat(x) + 5 + 'px';
             break;
+        case 'ArrowLeft':
+            block.style.marginLeft = parseFloat(x) - 5 + 'px';
+
     }
-}, false);
-
-document.addEventListener('keyup', (event) => {
-    var name = event.key;
-    var code = event.code;
-    console.log(name + '!');
-
-}, false);
+});
