@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>UI Example</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <div class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <button class="plus-btn">+</button>
-      <div class="nav-item">Label</div>
-      <div class="nav-item">Label</div>
-      <div class="nav-item">Label</div>
-      <div class="nav-item">Label</div>
-    </aside>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Example</title>
 
-    <!-- Main Content -->
-    <main class="main-content">
-      <header class="header">
-        <button class="menu">&#9776;</button>
-        <h1>Title</h1>
-        <div class="header-icons">
-          <span class="bookmark">&#9734;</span>
-          <span class="menu-dots">&#8942;</span>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="img-wrapper tiny">
+          <img src="GameFiles/TrafficChallengelogo.png" alt="Game Thumbnail" />
         </div>
-      </header>
 
-      <section class="card">
-        <div class="img-placeholder"></div>
-        <div class="text-content">
-          <h2>Headline</h2>
-          <p class="date">Published date</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-          <p>Excepteur sint occaecat cupidatat non proident...</p>
-          <button class="download-btn">Download</button>
-        </div>
-      </section>
+        <div class="nav-item">Games</div>
+        <div class="nav-item">Feedback</div>
+        <!-- <div class="nav-item">Label</div> -->
+        <div class="nav-item">About</div>
+      </aside>
 
-      <section class="section-title">
-        <h3>Section title &rarr;</h3>
-        <div class="list-item">
-          <div class="img-placeholder small"></div>
-          <div>
-            <h4>Title</h4>
-            <p>Description duis aute irure dolor in reprehenderit...</p>
+      <!-- Main Content -->
+      <main class="main-content">
+        <header class="header">
+          <button class="menu">&#9776;</button>
+          <h1>Title</h1>
+          <div class="header-icons">
+            <span class="bookmark">&#9734;</span>
+            <span class="menu-dots">&#8942;</span>
           </div>
-        </div>
-      </section>
-    </main>
-  </div>
+        </header>
 
-  <!-- Media Player -->
-  <footer class="media-player">
-    <div class="now-playing">
-      <div class="img-placeholder tiny"></div>
-      <div>
-        <div>Title</div>
-        <small>Artist</small>
-      </div>
-    </div>
-    <div class="controls">
-      <button>&#10074;&#10074;</button>
-      <button>&#9654;</button>
-    </div>
-  </footer>
+        <section class="card">
+          <div class="img-wrapper">
+            <img
+              src="GameFiles/TrafficChallengelogo.png"
+              alt="Game Thumbnail"
+            />
+          </div>
 
-  <script src="script.js"></script>
-</body>
+          <div class="text-content">
+            <h2 class="section-title">Traffic Skipper</h2>
+            <p class="sub-text">
+              Published on 07 May 2025<br />
+              Developed by J J Sriram
+            </p>
+            <p class="description">
+              'Traffic Skipper' is a stylized 3D low-poly driving game where
+              players navigate through busy traffic on a scenic mountain
+              highway. Featuring smooth visuals, dynamic vehicles, and a
+              charming minimal art style, the game challenges players to dodge
+              obstacles. Perfect for casual gameplay with a polished aesthetic.
+            </p>
+            <!-- HTML -->
+            <a
+              href="GameFiles\Traffic Challenge.rar"
+              download="TrafficSkipper.zip"
+            >
+              <button class="download-btn">Download</button>
+            </a>
+          </div>
+        </section>
+
+        <!-- <section class="section-title">
+          <h3>Section title &rarr;</h3>
+          <div class="list-item">
+            <div class="img-placeholder small"></div>
+            <div>
+              <h4>Title</h4>
+              <p>Description duis aute irure dolor in reprehenderit...</p>
+            </div>
+          </div>
+        </section> -->
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
