@@ -192,7 +192,32 @@ body {
   }
 
 }
-/* @media (max-width: 768px) { */
+
+@media (max-width: 768px) { 
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    display: flex;
+    align-items: flex-start;   /* tops align the image+text */
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    flex-wrap: wrap;           /* stacks on narrow screens */
+  }
+
+  .sidebar {
+    display: none;
+  }
+  .menu {
+    display: inline;
+  }
+  .download-btn{
+    display: none;
+  }
+
   /* .sidebar {
     width: 60px;
   }
@@ -219,7 +244,5 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-  }
+  }*/
 }
-
- */
