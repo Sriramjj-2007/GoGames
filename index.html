@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UI Example</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <button class="plus-btn">+</button>
+      <div class="nav-item">Label</div>
+      <div class="nav-item">Label</div>
+      <div class="nav-item">Label</div>
+      <div class="nav-item">Label</div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="header">
+        <button class="menu">&#9776;</button>
+        <h1>Title</h1>
+        <div class="header-icons">
+          <span class="bookmark">&#9734;</span>
+          <span class="menu-dots">&#8942;</span>
+        </div>
+      </header>
+
+      <section class="card">
+        <div class="img-placeholder"></div>
+        <div class="text-content">
+          <h2>Headline</h2>
+          <p class="date">Published date</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          <p>Excepteur sint occaecat cupidatat non proident...</p>
+          <button class="download-btn">Download</button>
+        </div>
+      </section>
+
+      <section class="section-title">
+        <h3>Section title &rarr;</h3>
+        <div class="list-item">
+          <div class="img-placeholder small"></div>
+          <div>
+            <h4>Title</h4>
+            <p>Description duis aute irure dolor in reprehenderit...</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Media Player -->
+  <footer class="media-player">
+    <div class="now-playing">
+      <div class="img-placeholder tiny"></div>
+      <div>
+        <div>Title</div>
+        <small>Artist</small>
+      </div>
+    </div>
+    <div class="controls">
+      <button>&#10074;&#10074;</button>
+      <button>&#9654;</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
