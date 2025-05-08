@@ -11,14 +11,36 @@
       href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <!-- Sidebar -->
-      <aside class="sidebar">
-        <div class="img-wrapper tiny">
+      <!-- <aside class="sidebar">
+        
+
+        <div class="nav-item">
+          <span class="material-symbols-outlined"> stadia_controller </span>
+          <p class="sidebar-text">Games</p>
+        </div>
+
+        <div class="nav-item">
+          <span class="material-symbols-outlined"> rate_review </span>
+          <p class="sidebar-text">Feedback</p>
+        </div>
+        <div class="nav-item">
+          <span class="material-symbols-outlined"> info </span>
+          <p class="sidebar-text">About</p>
+        </div>
+      </aside> -->
+      
+      <aside class="sidebar" id="sidebar">
+        <div class="img-wrapper tiny" id="logo">
           <img
             class="img-wrapper tiny"
             src="GameFiles/TrafficChallengelogo.png"
@@ -26,16 +48,26 @@
           />
         </div>
 
-        <div class="nav-item">Games</div>
-        <div class="nav-item">Feedback</div>
-        <!-- <div class="nav-item">Label</div> -->
-        <div class="nav-item">About</div>
+        <div class="nav-item" id="games_nav">
+          <span class="material-symbols-outlined">stadia_controller</span>
+          <span class="sidebar-text">Games</span>
+        </div>
+        <div class="nav-item" id="feedback_nav">
+          <span class="material-symbols-outlined">rate_review</span>
+          <span class="sidebar-text">Feedback</span>
+        </div>
+        <div class="nav-item" id="about_nav">
+          <span class="material-symbols-outlined">info</span>
+          <span class="sidebar-text">About</span>
+        </div>
       </aside>
 
       <!-- Main Content -->
       <main class="main-content">
         <header class="header">
-          <button class="menu">&#9776;</button>
+          <div class="menu_btn">
+            <button class="menu">&#9776;</button>
+          </div>
           <h1>Go Games!</h1>
           <div class="header-icons">
             <span class="bookmark">&#9734;</span>
