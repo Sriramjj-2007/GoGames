@@ -3,18 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const feedbackForm = document.getElementById('feedbackForm');
 
     const gamesBtn = document.getElementById('games_nav');
-    const gamesCard = document.getElementById('gamesCard');
-
-    feedbackBtn.addEventListener('click', () => {
-        // Toggle visibility
-        gamesCard.style.display = 'none';
-        feedbackForm.style.display = 'block';
-
-    });
+    const gameCards = document.querySelectorAll('.gamesCard');
 
     gamesBtn.addEventListener('click', () => {
-        // Toggle visibility
         feedbackForm.style.display = 'none';
-        gamesCard.style.display = 'block';
+        gameCards.forEach(card => card.style.display = 'flex');
     });
+
+    feedbackBtn.addEventListener('click', () => {
+        gameCards.forEach(card => card.style.display = 'none');
+        feedbackForm.style.display = 'block';
+    });
+
+
 });
