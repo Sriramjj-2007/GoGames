@@ -203,12 +203,25 @@ body {
 
 .download-btn {
   margin-top: 1rem;
-  background: #5e437c;
-  color: white;
   padding: 0.5rem 1rem;
-  border: none;
   border-radius: 20px;
   cursor: pointer;
+  border: 1px solid #5e437c;
+}
+
+.solid {
+  background-color: #5e437c;
+  color: white;
+}
+
+.outline {
+  background-color: white;
+  color: #5e437c;
+}
+
+.btn-group {
+  display: inline-flex;
+  padding: 1%;
 }
 
 .section-title {
